@@ -16,6 +16,6 @@ public class DefaultControllerTest {
 
     @Test
     public void testIndex() throws Exception {
-        assertEquals(HttpStatus.OK, client.toBlocking().exchange("/default").status());
+        assertEquals(HttpStatus.OK, client.toBlocking().exchange("/").status());
     }
 }
